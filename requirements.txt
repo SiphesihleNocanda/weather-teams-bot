@@ -1,0 +1,4 @@
+python-dotenv
+aiohttp>=3.8.1
+gunicorn>=20.0.0
+teams-ai>=1.6.0,<2.0.0

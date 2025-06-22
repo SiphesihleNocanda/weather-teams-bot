@@ -1,0 +1,62 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.19",
+    "version": "1.0.0",
+    "id": "73ca830b-1f4d-41e1-b1c3-a804ddaf2eee",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Weatherapp_sphelocal",
+        "full": "full name for Weatherapp_sphe"
+    },
+    "description": {
+        "short": "short description for Weatherapp_sphe",
+        "full": "full description for Weatherapp_sphe"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "5b2eff40-1374-4ada-b1fb-f777bdaba54e",
+            "scopes": [
+                "personal",
+                "team",
+                "groupChat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "5 day forecast",
+                            "description": "5-day forecast for city of choice"
+                        },
+                        {
+                            "title": "Weather in Port Elizabeth",
+                            "description": "The current weather in Port Elizabeth"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
